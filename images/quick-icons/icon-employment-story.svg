@@ -1,0 +1,19 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="80" height="80" rx="20" fill="white"/>
+<circle cx="54.168" cy="34.1667" r="6.66667" stroke="black" stroke-width="1.66667"/>
+<path d="M43.332 50C43.332 46.3181 46.3168 43.3333 49.9987 43.3333H58.332C62.0139 43.3333 64.9987 46.3181 64.9987 50V66.6666C64.9987 67.5871 64.2525 68.3333 63.332 68.3333H44.9987C44.0782 68.3333 43.332 67.5871 43.332 66.6666V50Z" stroke="black" stroke-width="1.66667"/>
+<path d="M38.8 63H22V19.3333C22 17.4924 23.4924 16 25.3333 16H46.6667C48.5076 16 50 17.4924 50 19.3333V26" stroke="black" stroke-width="1.66667" stroke-linecap="round"/>
+<circle cx="54.1654" cy="57.5" r="0.833333" fill="black"/>
+<circle cx="54.1654" cy="62.5" r="0.833333" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M54.168 46.6666L56.668 43.3333H51.668L54.168 46.6666Z" fill="black"/>
+<path d="M54.168 46.6666L52.7445 48.8019C52.5922 49.0302 52.5622 49.3189 52.6641 49.5737L54.168 53.3333L55.6718 49.5737C55.7737 49.3189 55.7437 49.0302 55.5915 48.8019L54.168 46.6666Z" fill="#0091F9"/>
+<path d="M54.168 52.5L49.8402 44.5657C49.5373 44.0104 49.9392 43.3333 50.5718 43.3333H54.168H57.7642C58.3967 43.3333 58.7987 44.0104 58.4958 44.5657L54.168 52.5Z" stroke="black" stroke-width="1.66667" stroke-linecap="round"/>
+<path d="M26.668 13.6667C26.668 12.7462 27.4142 12 28.3346 12H43.3346C44.2551 12 45.0013 12.7462 45.0013 13.6667V15.3333H26.668V13.6667Z" fill="#0091F9" stroke="black" stroke-width="1.66667"/>
+<path d="M38.6667 63H17V67.1667H38.6667" stroke="black" stroke-width="1.66667" stroke-linecap="round"/>
+<rect x="27.8333" y="22.8333" width="5" height="5" rx="0.833333" stroke="black" stroke-width="1.66667"/>
+<rect x="39.4974" y="22.8333" width="5" height="5" rx="0.833333" stroke="black" stroke-width="1.66667"/>
+<rect x="27.8333" y="34.5" width="5" height="5" rx="0.833333" stroke="black" stroke-width="1.66667"/>
+<rect x="27.8333" y="46.1667" width="5" height="5" rx="0.833333" stroke="black" stroke-width="1.66667"/>
+<path d="M43.6667 46.1667H40.3333C39.8731 46.1667 39.5 46.5398 39.5 47V50.3334C39.5 50.7936 39.8731 51.1667 40.3333 51.1667H41.1667" stroke="black" stroke-width="1.66667" stroke-linecap="round"/>
+<rect x="39.4974" y="34.5" width="5" height="5" rx="0.833333" stroke="black" stroke-width="1.66667"/>
+</svg>

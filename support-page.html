@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>지원페이지</title>
+    <!-- favicon -->
+    <link rel="icon" href="./images/favicon/favicon.ico" />
+    <!-- policy -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+    <!-- 제이쿼리 cdn -->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <!-- css link -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/supply.css" />
+    <link rel="stylesheet" href="./css/mega-title.css" />
+    <!-- font-awesome cdn -->
+    <script
+      src="https://kit.fontawesome.com/f677d60065.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- js link -->
+    <script src="./js/include.js"></script>
+    <script src="./js/paging.js"></script>
+    <script src="./js/common.js"></script>
+  </head>
+  <body>
+    <a class="top-btn" href="#">
+      <img src="./images/svg/top-btn-arrow.svg" alt="탑버튼" />
+    </a>
+    <div class="container">
+      <div class="header-include"></div>
+      <main>
+        <section class="search-support-section">
+          <h2 class="blind">정책검색 섹션</h2>
+          <div class="search-support-inner">
+            <div class="section-mega-title-box interview-mega-title-box">
+              <h2>태안 청년정책</h2>
+              <p>청년들의 더 나은 삶을 위한 태안군의 정책을 확인해보세요</p>
+            </div>
+            <div class="section-location-box">
+              <a href="./index.html">홈</a>
+              <a href="./support-page.html">태안 청년정책</a>
+            </div>
+            <div class="main-polcy">
+              <h3><span>2024</span> 주요 청년정책</h3>
+              <div class="main-polcy-poster-all-box">
+                <div class="main-polcy-poster-box">
+                  <div class="main-polcy-poster-img-box">
+                    <img
+                      src="./images/svg/poster-policy-card-img01.svg"
+                      alt="정책포스터"
+                    />
+                  </div>
+                  <div class="main-polcy-poster-text-box">
+                    <h4>면접 정장 대여</h4>
+                    <p>청년 구직자에게 면접 정장 무료 대여</p>
+                    <ul class="main-polcy-info-box">
+                      <li class="main-polcy-info">
+                        <span>· 기간 :</span>
+                        <p>상시</p>
+                      </li>
+                      <li class="main-polcy-info">
+                        <span>· 대상 :</span>
+                        <p>취업, 몇접 예정 삼척청년(만 18 ~ 만39세)</p>
+                      </li>
+                      <li class="main-polcy-info">
+                        <span>· 내용 :</span>
+                        <p>
+                          대여품목 - 남녀 정장 세트 세트(자켓,치마,바지,셔츠 등)
+                          대여기간 - 상세 조정
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="main-polcy-poster-box">
+                  <div class="main-polcy-poster-img-box">
+                    <img
+                      src="./images/svg/poster-policy-card-img02.svg"
+                      alt="정책포스터"
+                    />
+                  </div>
+                  <div class="main-polcy-poster-text-box">
+                    <h4>청년농업인 영농정착 지원사업</h4>
+                    <p>
+                      창업자금, 기술경영 교육과 컨설팅, 농지은행 매입비축 농지
+                      임대 및 농지 대여
+                    </p>
+                    <ul class="main-polcy-info-box">
+                      <li class="main-polcy-info">
+                        <span>· 기간 :</span>
+                        <p>2022년 ~ 계속</p>
+                      </li>
+                      <li class="main-polcy-info">
+                        <span>· 대상 :</span>
+                        <p>창업농, 만18 ~ 만39세, 전년도 미성년자</p>
+                      </li>
+                      <li class="main-polcy-info">
+                        <span>· 내용 :</span>
+                        <p>
+                          영농정착금 지원 ~ 독립경영 1년차 : 월 100만원 지원(4월
+                          ~ 익년도 3월)
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="search-support-wrap">
+              <div class="supply-condition-wrapper">
+                <h3>청년정책 검색</h3>
+                <div class="supply-condition-box">
+                  <ul class="supply-btns-box">
+                    <li class="supply-kind-box supply-kind-search-container">
+                      <div class="supply-kind-title">정책명 및 내용</div>
+                      <div class="supply-kind-search-box">
+                        <label class="blind" for="supply-kind-search-input"
+                          >정책검색</label
+                        >
+                        <input
+                          type="text"
+                          id="supply-kind-search-input"
+                          placeholder="키워드를 적어주세요"
+                        />
+                        <button style="font-size: 0">검색</button>
+                      </div>
+                    </li>
+                    <li class="supply-age supply-kind-box">
+                      <div class="supply-kind-title">연령</div>
+                      <div class="supply-kind-btns">
+                        <button class="kind-all-btn age-all-btn">
+                          연령전체
+                        </button>
+                        <button class="supply-age-btn">만 18~24세</button>
+                        <button class="supply-age-btn">만 25~29세</button>
+                        <button class="supply-age-btn">만 30~34세</button>
+                        <button class="supply-age-btn">만 35~39세</button>
+                      </div>
+                    </li>
+                    <li class="supply-location supply-kind-box">
+                      <div class="supply-kind-title">지역</div>
+                      <div class="supply-kind-btns">
+                        <button class="kind-all-btn location-all-btn">
+                          분야전체
+                        </button>
+                        <button class="supply-location-btn">일자리</button>
+                        <button class="supply-location-btn">청년지원</button>
+                        <button class="supply-location-btn">창업지원</button>
+                        <button class="supply-location-btn">주거지원</button>
+                        <button class="supply-location-btn">육아지원</button>
+                        <button class="supply-location-btn">교육지원</button>
+                      </div>
+                    </li>
+                    <li class="supply-field supply-kind-box">
+                      <div class="supply-kind-title">분야</div>
+                      <div class="supply-kind-btns">
+                        <button class="kind-all-btn field-all-btn">
+                          대상전체
+                        </button>
+                        <button class="supply-field-btn">대학생</button>
+                        <button class="supply-field-btn">구직자</button>
+                        <button class="supply-field-btn">재직자</button>
+                        <button class="supply-field-btn">예비창업자</button>
+                        <button class="supply-field-btn">기창업자</button>
+                        <button class="supply-field-btn">프리랜서</button>
+                        <button style="font-size: 0" class="supply-field-btn">
+                          내용없음
+                        </button>
+                        <button class="supply-field-btn">자영업자</button>
+                        <button class="supply-field-btn">미취업자</button>
+                        <button class="supply-field-btn">영농종사자</button>
+                        <button class="supply-field-btn">단기근로자</button>
+                        <button class="supply-field-btn">일용근로자</button>
+                        <button class="supply-field-btn">제한없음</button>
+                      </div>
+                    </li>
+                    <li class="supply-state supply-kind-box">
+                      <div class="supply-kind-title">상태</div>
+                      <div class="supply-kind-btns">
+                        <button class="kind-all-btn state-all-btn">
+                          현황전체
+                        </button>
+                        <button class="supply-state-btn">상시</button>
+                        <button class="supply-state-btn">모집중</button>
+                        <button class="supply-state-btn">마감</button>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="supply-result-box">
+                    <div class="supply-copy-btn-box"></div>
+                  </div>
+                  <div class="supply-btn-box">
+                    <button class="supply-re-btn">초기화</button>
+                    <button class="supply-search-btn">검색</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="support-card-box">
+              <div class="youth-supply-card">
+                <div class="youth-supply-top-box">
+                  <img
+                    src="./images/svg/support-filter-icon-ongoing.svg"
+                    alt="청년지원 날짜마크"
+                  />
+                  <span class="youth-supply-category welfare-mark"
+                    >복지·문화</span
+                  >
+                </div>
+                <div class="youth-supply-middle-box">
+                  <h3>문화누리카드</h3>
+                </div>
+                <ul class="youth-supply-bottom-box">
+                  <li class="youth-supply-infos">
+                    <strong>제공유형</strong>
+                    <span>연간 13만원 지원</span>
+                  </li>
+                  <li class="youth-supply-infos">
+                    <strong>신청기간</strong>
+                    <span>24-02-01 ~ 24년 11월 31일</span>
+                  </li>
+                  <li class="youth-supply-infos">
+                    <strong>신청방법</strong>
+                    <span>주민센터를 통한 발급</span>
+                  </li>
+                  <li class="youth-supply-infos">
+                    <strong>제공기간</strong>
+                    <span>매 월 신청일 기분 다음날 지급</span>
+                  </li>
+                  <li class="youth-supply-infos">
+                    <strong>지원대상</strong>
+                    <span>만 19세 ~ 39세</span>
+                  </li>
+                </ul>
+                <div class="youth-supply-card-detail">
+                  <p>
+                    문화누리카드는 삶의 질 향상과 문화격차 완화를 위해
+                    기초생활수급자, 차상위계층을 대상으로 문화예술, 국내여행,
+                    체육활동을 지원하는 카드
+                  </p>
+                  <a href="#" class="youth-supply-to-detail-btn">
+                    <span>자세히 보기</span>
+                    <img src="./images/svg/chevron-right-01.svg" alt="방향" />
+                  </a>
+                </div>
+              </div>
+              <div class="youth-supply-card">
+                <div class="youth-supply-top-box">
+                  <img
+                    src="./images/svg/support-filter-icon-ongoing.svg"
+                    alt="청년지원 날짜마크"
+                  />
+                  <span class="youth-supply-category welfare-mark job"
+                    >일자리</span
+                  >
+                </div>
+                <div class="youth-supply-middle-box">
+                  <h3>2024 청춘만발 참여 예술인 모집</h3>
+                </div>
+                <ul class="youth-supply-bottom-box">
+                  <li class="youth-supply-infos">
+                    <strong>제공유형</strong>
+                    <span>지원금 1,000만원</span>
+                  </li>
+                  <li class="youth-supply-infos">
+                    <strong>신청기간</strong>
+                    <span>24-01-19~ 24년 01월 21일</span>
+                  </li>
+                  <li class="youth-supply-infos">
+                    <strong>신청방법</strong>
+                    <span>이메일접수 : culture@jeongdong.or.kr</span>
+                  </li>
+                  <li class="youth-supply-infos">
+                    <strong>제공기간</strong>
+                    <span>매 월 1일 지급</span>
+                  </li>
+                  <li class="youth-supply-infos">
+                    <strong>지원대상</strong>
+                    <span>만 19세 ~ 34세</span>
+                  </li>
+                </ul>
+                <div class="youth-supply-card-detail">
+                  <p>
+                    전통공연예술의 미래를 열어나갈 청년 예술인의 활동기회 마련
+                    및 창작 독려를 위한 전통공연예술 창작 인큐베이팅 사업
+                  </p>
+                  <a href="#" class="youth-supply-to-detail-btn">
+                    <span>자세히 보기</span>
+                    <img src="./images/svg/chevron-right-01.svg" alt="방향" />
+                  </a>
+                </div>
+              </div>
+              <div class="youth-supply-card">
+                <div class="youth-supply-top-box">
+                  <img
+                    src="./images/svg/support-filter-icon-always.svg"
+                    alt="청년지원 날짜마크"
+                  />
+                  <span class="youth-supply-category parenting welfare-mark"
+                    >육아</span
+                  >
+                </div>
+                <div class="youth-supply-middle-box">
+                  <h3>임산부 친환경농산물 지원사업</h3>
+                </div>
+                <ul class="youth-supply-bottom-box">
+                  <li class="youth-supply-infos">
+                    <strong>제공유형</strong>
+                    <span>농수산물 지급</span>
+                  </li>
+                  <li class="youth-supply-infos">
+                    <strong>신청기간</strong>
+                    <span>상시</span>
+                  </li>
+                  <li class="youth-supply-infos">
+                    <strong>신청방법</strong>
+                    <span>온라인(www.ecoemall.com) 및 동주민센터 신청</span>
+                  </li>
+                  <li class="youth-supply-infos">
+                    <strong>제공기간</strong>
+                    <span>친환경 농산물 꾸러미 월 1~4회 공급 </span>
+                  </li>
+                  <li class="youth-supply-infos">
+                    <strong>지원대상</strong>
+                    <span>연령 전체</span>
+                  </li>
+                </ul>
+                <div class="youth-supply-card-detail">
+                  <p>
+                    임산부 친환경농산물 지원사업이란 미래세대의 건강을 위해
+                    임산부에게 친환경농산물을 공급하여 국민건강, 환경보전,
+                    지역경제 활성화 등 사회적 가치 구현을 위한 친환경 먹거리
+                    정책입니다. 홈페이지 또는 읍면동주민센터(서울시는 해당
+                    구청)에서 신청하시면 지자체에서 선정 절차를 거쳐 최종 선정
+                    여부와 함께 임산부 고유번호를 문자 메시지로 발송해드립니다.
+                  </p>
+                  <a href="#" class="youth-supply-to-detail-btn">
+                    <span>자세히 보기</span>
+                    <img src="./images/svg/chevron-right-01.svg" alt="방향" />
+                  </a>
+                </div>
+              </div>
+              <div class="youth-supply-card">
+                <div class="youth-supply-top-box">
+                  <img
+                    src="./images/svg/support-filter-icon-ongoing.svg"
+                    alt="청년지원 날짜마크"
+                  />
+                  <span class="youth-supply-category welfare-mark"
+                    >복지·문화</span
+                  >
+                </div>
+                <div class="youth-supply-middle-box">
+                  <h3>2024년 국가장학금 2차 신청 안내</h3>
+                </div>
+                <ul class="youth-supply-bottom-box">
+                  <li class="youth-supply-infos">
+                    <strong>제공유형</strong>
+                    <span>국가 장학금</span>
+                  </li>
+                  <li class="youth-supply-infos">
+                    <strong>신청기간</strong>
+                    <span>24-02-01~24.03.19</span>
+                  </li>
+                  <li class="youth-supply-infos">
+                    <strong>신청방법</strong>
+                    <span>https://zrr.kr/wjLL에서 신청</span>
+                  </li>
+                  <li class="youth-supply-infos">
+                    <strong>제공기간</strong>
+                    <span>신청 2~3일 후</span>
+                  </li>
+                  <li class="youth-supply-infos">
+                    <strong>지원대상</strong>
+                    <span
+                      >신입생, 편입생, 재입학생, 복학생 및 1차 신청을 놓친
+                      재학생</span
+                    >
+                  </li>
+                </ul>
+                <div class="youth-supply-card-detail">
+                  <p>
+                    대학생들의 등록금 부담을 덜어주고 학업에 열중할 수 있도록
+                    하는 국가장학금
+                  </p>
+                  <a href="#" class="youth-supply-to-detail-btn">
+                    <span>자세히 보기</span>
+                    <img src="./images/svg/chevron-right-01.svg" alt="방향" />
+                  </a>
+                </div>
+              </div>
+              <div class="youth-supply-card">
+                <div class="youth-supply-top-box">
+                  <img
+                    src="./images/svg/support-filter-icon-ongoing.svg"
+                    alt="청년지원 날짜마크"
+                  />
+                  <span class="youth-supply-category edu welfare-mark"
+                    >교육</span
+                  >
+                </div>
+                <div class="youth-supply-middle-box">
+                  <h3>청년발전소</h3>
+                </div>
+                <ul class="youth-supply-bottom-box">
+                  <li class="youth-supply-infos">
+                    <strong>제공유형</strong>
+                    <span
+                      >가족, 시민정신, 현직에 있는 선배로부터 생생한 현장 이야기
+                      듣기, 플로깅하기, 가계부 워크샵, 운동, 스트레칭 등</span
+                    >
+                  </li>
+                  <li class="youth-supply-infos">
+                    <strong>신청기간</strong>
+                    <span>2023-01-01 ~</span>
+                  </li>
+                  <li class="youth-supply-infos">
+                    <strong>신청방법</strong>
+                    <span>선착순 접수</span>
+                  </li>
+                  <li class="youth-supply-infos">
+                    <strong>제공기간</strong>
+                    <span>3개월</span>
+                  </li>
+                  <li class="youth-supply-infos">
+                    <strong>지원대상</strong>
+                    <span>만 19세 ~ 39세</span>
+                  </li>
+                </ul>
+                <div class="youth-supply-card-detail">
+                  <p>
+                    삶의 다양한 영역(가족, 관계, 일, 봉사, 재무, 학습, 여가,
+                    건강 등)에 대한 이해를 통해 현재부터 미래까지 청년의 인생을
+                    구체적으로 설계
+                  </p>
+                  <a href="#" class="youth-supply-to-detail-btn">
+                    <span>자세히 보기</span>
+                    <img src="./images/svg/chevron-right-01.svg" alt="방향" />
+                  </a>
+                </div>
+              </div>
+              <div class="youth-supply-card">
+                <div class="youth-supply-top-box">
+                  <img
+                    src="./images/svg/support-filter-icon-ongoing.svg"
+                    alt="청년지원 날짜마크"
+                  />
+                  <span class="youth-supply-category dwelling welfare-mark"
+                    >주거</span
+                  >
+                </div>
+                <div class="youth-supply-middle-box">
+                  <h3>청년월세 한시 특별지원사업 2차 모집 안내</h3>
+                </div>
+                <ul class="youth-supply-bottom-box">
+                  <li class="youth-supply-infos">
+                    <strong>제공유형</strong>
+                    <span>월 최대 20만원</span>
+                  </li>
+                  <li class="youth-supply-infos">
+                    <strong>신청기간</strong>
+                    <span>24-02-26~24-02-26</span>
+                  </li>
+                  <li class="youth-supply-infos">
+                    <strong>신청방법</strong>
+                    <span>복지로 홈페이지</span>
+                  </li>
+                  <li class="youth-supply-infos">
+                    <strong>제공기간</strong>
+                    <span>24-3월~26-6월</span>
+                  </li>
+                  <li class="youth-supply-infos">
+                    <strong>지원대상</strong>
+                    <span>만 19세 ~ 34세</span>
+                  </li>
+                </ul>
+                <div class="youth-supply-card-detail">
+                  <p>
+                    경제적 어려움을 겪는 청년층의 주거비 부담을 덜어드리기 위해
+                    12개월 분의 월세를 최대 20만원까지 지원하는 사업입니다.
+                  </p>
+                  <a href="#" class="youth-supply-to-detail-btn">
+                    <span>자세히 보기</span>
+                    <img src="./images/svg/chevron-right-01.svg" alt="방향" />
+                  </a>
+                </div>
+              </div>
+              <div class="youth-supply-card">
+                <div class="youth-supply-top-box">
+                  <img
+                    src="./images/svg/support-filter-icon-ongoing.svg"
+                    alt="청년지원 날짜마크"
+                  />
+                  <span class="youth-supply-category job welfare-mark"
+                    >일자리</span
+                  >
+                </div>
+                <div class="youth-supply-middle-box">
+                  <h3>
+                    2024년 청년연계 K디자인 파워업 사업 수요기업 및 청년
+                    디자이너 모집
+                  </h3>
+                </div>
+                <ul class="youth-supply-bottom-box">
+                  <li class="youth-supply-infos">
+                    <strong>제공유형</strong>
+                    <span>기업별 최대 2명의 인던 디자이너 인건비</span>
+                  </li>
+                  <li class="youth-supply-infos">
+                    <strong>신청기간</strong>
+                    <span>24-02-05~24-06-21</span>
+                  </li>
+                  <li class="youth-supply-infos">
+                    <strong>신청방법</strong>
+                    <span>한국디자인진흥원 인재 육성실 미래일자리팀</span>
+                  </li>
+                  <li class="youth-supply-infos">
+                    <strong>제공기간</strong>
+                    <span>최대 5개월</span>
+                  </li>
+                  <li class="youth-supply-infos">
+                    <strong>지원대상</strong>
+                    <span>만 19세 ~ 34세</span>
+                  </li>
+                </ul>
+                <div class="youth-supply-card-detail">
+                  <p>
+                    디자인전문기업, 고용보험 5인 이상 소속된 중소,중견기업과
+                    미취업 청년 디자이너를 매칭하여 5개월 인턴쉽 지원
+                  </p>
+                  <a href="#" class="youth-supply-to-detail-btn">
+                    <span>자세히 보기</span>
+                    <img src="./images/svg/chevron-right-01.svg" alt="방향" />
+                  </a>
+                </div>
+              </div>
+              <div class="youth-supply-card">
+                <div class="youth-supply-top-box">
+                  <img
+                    src="./images/svg/support-filter-icon-ongoing.svg"
+                    alt="청년지원 날짜마크"
+                  />
+                  <span class="youth-supply-category welfare-mark">육아</span>
+                </div>
+                <div class="youth-supply-middle-box">
+                  <h3>퇴소아동 자립정착금 지원</h3>
+                </div>
+                <ul class="youth-supply-bottom-box">
+                  <li class="youth-supply-infos">
+                    <strong>제공유형</strong>
+                    <span>아동 1인당 자립정착금 800만원 지급</span>
+                  </li>
+                  <li class="youth-supply-infos">
+                    <strong>신청기간</strong>
+                    <span>22-01-01 ~</span>
+                  </li>
+                  <li class="youth-supply-infos">
+                    <strong>신청방법</strong>
+                    <span>시군 아동청소년 업무 소관 부서</span>
+                  </li>
+                  <li class="youth-supply-infos">
+                    <strong>제공기간</strong>
+                    <span>신청 접수일로부터 30일</span>
+                  </li>
+                  <li class="youth-supply-infos">
+                    <strong>지원대상</strong>
+                    <span>연령 전체</span>
+                  </li>
+                </ul>
+                <div class="youth-supply-card-detail">
+                  <p>
+                    아동복지시설을 퇴소한 아동의 자립을 지원하기 위해
+                    정부·지자체가 자립정착금과 자립 수당을 지원
+                  </p>
+                  <a href="#" class="youth-supply-to-detail-btn">
+                    <span>자세히 보기</span>
+                    <img src="./images/svg/chevron-right-01.svg" alt="방향" />
+                  </a>
+                </div>
+              </div>
+              <div class="youth-supply-card">
+                <div class="youth-supply-top-box">
+                  <img
+                    src="./images/svg/support-filter-icon-ongoing.svg"
+                    alt="청년지원 날짜마크"
+                  />
+                  <span class="youth-supply-category welfare-mark"
+                    >복지·문화</span
+                  >
+                </div>
+                <div class="youth-supply-middle-box">
+                  <h3>2024년 미래농업 융자금 이차보전금 지원사업</h3>
+                </div>
+                <ul class="youth-supply-bottom-box">
+                  <li class="youth-supply-infos">
+                    <strong>제공유형</strong>
+                    <span>농가당 3억</span>
+                  </li>
+                  <li class="youth-supply-infos">
+                    <strong>신청기간</strong>
+                    <span>24-02-19~24-02-29</span>
+                  </li>
+                  <li class="youth-supply-infos">
+                    <strong>신청방법</strong>
+                    <span>농장소재지 읍, 면, 동 행정센터 방문</span>
+                  </li>
+                  <li class="youth-supply-infos">
+                    <strong>제공기간</strong>
+                    <span>8년 이내</span>
+                  </li>
+                  <li class="youth-supply-infos">
+                    <strong>지원대상</strong>
+                    <span>농축살림 농업인 및 법인</span>
+                  </li>
+                </ul>
+                <div class="youth-supply-card-detail">
+                  <p>경제적 어려움을 겪는 예술인에게 창작준비급 지원</p>
+                  <a href="#" class="youth-supply-to-detail-btn">
+                    <span>자세히 보기</span>
+                    <img src="./images/svg/chevron-right-01.svg" alt="방향" />
+                  </a>
+                </div>
+              </div>
+              <div class="youth-supply-card">
+                <div class="youth-supply-top-box">
+                  <img
+                    src="./images/svg/support-filter-icon-always.svg"
+                    alt="청년지원 날짜마크"
+                  />
+                  <span class="youth-supply-category welfare-mark">교육</span>
+                </div>
+                <div class="youth-supply-middle-box">
+                  <h3>
+                    K디지털 기초역량훈련] 국민내일배움카드지원 훈련생 모집
+                  </h3>
+                </div>
+                <ul class="youth-supply-bottom-box">
+                  <li class="youth-supply-infos">
+                    <strong>제공유형</strong>
+                    <span>사물 인터넷 신청시 키트 무료제공, 모바일 수강</span>
+                  </li>
+                  <li class="youth-supply-infos">
+                    <strong>신청기간</strong>
+                    <span>매주 수요일 개강</span>
+                  </li>
+                  <li class="youth-supply-infos">
+                    <strong>신청방법</strong>
+                    <span>신청 링크</span>
+                  </li>
+                  <li class="youth-supply-infos">
+                    <strong>제공기간</strong>
+                    <span>1년 제공</span>
+                  </li>
+                  <li class="youth-supply-infos">
+                    <strong>지원대상</strong>
+                    <span>내일배움카드가 있다면 누구나 가능</span>
+                  </li>
+                </ul>
+                <div class="youth-supply-card-detail">
+                  <p>
+                    기초 코딩, 웹, 앱 개발등 디지털 기초 과전을 언제 어디서든
+                    100% 원격으로 수강할 수 있도록 지원
+                  </p>
+                  <a href="#" class="youth-supply-to-detail-btn">
+                    <span>자세히 보기</span>
+                    <img src="./images/svg/chevron-right-01.svg" alt="방향" />
+                  </a>
+                </div>
+              </div>
+              <div class="youth-supply-card">
+                <div class="youth-supply-top-box">
+                  <img
+                    src="./images/svg/support-filter-icon-always.svg"
+                    alt="청년지원 날짜마크"
+                  />
+                  <span class="youth-supply-category job welfare-mark"
+                    >일자리</span
+                  >
+                </div>
+                <div class="youth-supply-middle-box">
+                  <h3>원스톱창업 1:1 맞춤형 컨설팅</h3>
+                </div>
+                <ul class="youth-supply-bottom-box">
+                  <li class="youth-supply-infos">
+                    <strong>제공유형</strong>
+                    <span>창업가 정보, 1:1 상담</span>
+                  </li>
+                  <li class="youth-supply-infos">
+                    <strong>신청기간</strong>
+                    <span>매주 화요일 ~ 금요일</span>
+                  </li>
+                  <li class="youth-supply-infos">
+                    <strong>신청방법</strong>
+                    <span>063-471-1555</span>
+                  </li>
+                  <li class="youth-supply-infos">
+                    <strong>제공기간</strong>
+                    <span>원활한 상담을 위한 2일전 신청이라면 언제든지</span>
+                  </li>
+                  <li class="youth-supply-infos">
+                    <strong>지원대상</strong>
+                    <span>연령 전체</span>
+                  </li>
+                </ul>
+                <div class="youth-supply-card-detail">
+                  <p>
+                    창업 전문가 1:1 매칭 창업 코칭, 비대면-대면 컨설팅, 다양한
+                    상담 분야 멘토들로 창업 컨설팅
+                  </p>
+                  <a href="#" class="youth-supply-to-detail-btn">
+                    <span>자세히 보기</span>
+                    <img src="./images/svg/chevron-right-01.svg" alt="방향" />
+                  </a>
+                </div>
+              </div>
+              <div class="youth-supply-card">
+                <div class="youth-supply-top-box">
+                  <img
+                    src="./images/svg/support-filter-icon-ongoing.svg"
+                    alt="청년지원 날짜마크"
+                  />
+                  <span class="youth-supply-category job welfare-mark"
+                    >일자리</span
+                  >
+                </div>
+                <div class="youth-supply-middle-box">
+                  <h3>2024년 시군청년혁신가 예비창업지원</h3>
+                </div>
+                <ul class="youth-supply-bottom-box">
+                  <li class="youth-supply-infos">
+                    <strong>제공유형</strong>
+                    <span
+                      >교 육 : 창업기업 육성 프로그램 운영(필수 참여). 사업화
+                      지원 : 사업 아이디어 실현을 위한 시제품 제작비
+                      지급(팀별13백만원), 컨설팅</span
+                    >
+                  </li>
+                  <li class="youth-supply-infos">
+                    <strong>신청기간</strong>
+                    <span>24-02-13~ 24-03-05</span>
+                  </li>
+                  <li class="youth-supply-infos">
+                    <strong>신청방법</strong>
+                    <span>신청 링크</span>
+                  </li>
+                  <li class="youth-supply-infos">
+                    <strong>제공기간</strong>
+                    <span>교육 시작 후 3개월</span>
+                  </li>
+                  <li class="youth-supply-infos">
+                    <strong>지원대상</strong>
+                    <span>만 19세 ~ 39세</span>
+                  </li>
+                </ul>
+                <div class="youth-supply-card-detail">
+                  <p>
+                    지역 특화 분야 창업 아이디어 및 기술 기반 아이템을 보유한
+                    청년 창업가를 발굴하고, 창업기업 육성을 위한 지원
+                  </p>
+                  <a href="#" class="youth-supply-to-detail-btn">
+                    <span>자세히 보기</span>
+                    <img src="./images/svg/chevron-right-01.svg" alt="방향" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- end : search-support-section -->
+        <div class="paging interview-paging">
+          <div class="paging-inner interview-paging-inner">
+            <ul class="paging-box interview-paging-box">
+              <li class="paging-list interview-paging-list prev-double-page">
+                <a href="#none"
+                  ><img
+                    src="./images/svg/chevron-left-double.svg"
+                    alt="맨처음으로"
+                /></a>
+              </li>
+              <li class="paging-list interview-paging-list prev-page">
+                <a href="#none"
+                  ><img src="./images/svg/chevron-left-01.svg" alt="전단계"
+                /></a>
+              </li>
+              <li class="paging-list interview-paging-list active number">
+                <a href="#none">1</a>
+              </li>
+              <li class="paging-list interview-paging-list number">
+                <a href="#none">2</a>
+              </li>
+              <li class="paging-list interview-paging-list number">
+                <a href="#none">3</a>
+              </li>
+              <li class="paging-list interview-paging-list number">
+                <a href="#none">4</a>
+              </li>
+              <li class="paging-list interview-paging-list number">
+                <a href="#none">5</a>
+              </li>
+              <li class="paging-list interview-paging-list next-page">
+                <a href="#none"
+                  ><img
+                    src="./images/svg/chevron-right-01.svg"
+                    alt="다음페이지"
+                /></a>
+              </li>
+              <li class="paging-list interview-paging-list next-double-page">
+                <a href="#none"
+                  ><img
+                    src="./images/svg/chevron-right-double.svg"
+                    alt="맨끝으로"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </main>
+      <div class="footer-include"></div>
+    </div>
+    <script src="./js/supply.js"></script>
+  </body>
+</html>

@@ -1,0 +1,165 @@
+@charset "utf-8";
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--main-font);
+  color: var(--neutral-900);
+  position: relative;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+input,
+button,
+label {
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+select {
+  outline: none;
+}
+button {
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+}
+form,
+fieldset {
+  padding: 0;
+  margin: 0;
+}
+fieldset {
+  border: none;
+}
+.blind {
+  display: none;
+}
+[class*="inner"] {
+  width: 1200px;
+  margin: auto;
+}
+section {
+  overflow: hidden;
+}
+section:not(.main-banner-section, .main-slide-section) {
+  padding: 40px 0;
+}
+.title {
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.title img {
+  width: 24px;
+  height: 24px;
+}
+.title h1 {
+  font-weight: var(--semi-bold);
+  font-size: var(--title-lg-24);
+}
+.title h1 span {
+  color: var(--primary-700);
+}
+.title a {
+  display: flex;
+  align-items: center;
+}
+.title a span {
+  font-size: var(--title-sm-18);
+  font-weight: var(--semi-bold);
+}
+.title a img {
+  transition: 0.4s;
+}
+.title a:hover img {
+  transform: rotate(180deg);
+}
+.eye-emoji {
+  width: 24px !important;
+  height: 18px !important;
+}
+.fire-emoji {
+  width: 20px !important;
+  height: 24px !important;
+}
+.top-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--white);
+  border: 2px solid var(--primary-700);
+  position: absolute;
+  right: 20px;
+  z-index: 100;
+  transition: 0.4s;
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.top-btn.active {
+  right: 32px;
+  opacity: 1;
+  visibility: visible;
+}
+@media (max-width: 767px) {
+  section:not(.main-banner-section, .main-slide-section) {
+    padding: 24px 0;
+  }
+  [class*="inner"] {
+    width: 100%;
+  }
+  .title a img {
+    display: none;
+  }
+  .title h1 {
+    font-weight: var(--semi-bold);
+    font-size: 22px;
+  }
+  .title a span {
+    font-size: var(--body-sm-14);
+  }
+  .top-btn {
+    width: 24px;
+    height: 24px;
+    right: 0px;
+    border: 1px solid var(--primary-700);
+  }
+  .top-btn img{
+    width: 12px;
+    height: 12px;
+  }
+  .top-btn.active {
+    right: 10px;
+    opacity: 1;
+    visibility: visible;
+  }
+}

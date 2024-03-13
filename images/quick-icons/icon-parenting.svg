@@ -1,0 +1,16 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="80" height="80" rx="20" fill="white"/>
+<rect x="10.668" y="37" width="53.3333" height="1.66667" rx="0.833333" fill="black"/>
+<path d="M13.4368 37H38.9987L16.5635 25.7824C16.0968 25.5491 15.5329 25.7971 15.3895 26.2988L12.6355 35.9378C12.4834 36.4701 12.8832 37 13.4368 37Z" fill="#0091F9" stroke="black" stroke-width="1.66667"/>
+<path d="M16.7509 25.8748L39.0013 37L26.2023 17.0016C25.9233 16.5657 25.3188 16.4868 24.9373 16.8365L16.5605 24.5152C16.1299 24.9099 16.2285 25.6136 16.7509 25.8748Z" fill="#0091F9" stroke="black" stroke-width="1.66667"/>
+<path d="M26.8444 18.0049L39.0013 37V14.267C39.0013 13.1426 37.9107 12.3408 36.8375 12.6762L27.7511 15.5157C26.7021 15.8435 26.252 17.0792 26.8444 18.0049Z" fill="#0091F9" stroke="black" stroke-width="1.66667" stroke-linecap="round"/>
+<circle cx="22.332" cy="63.6666" r="4.16667" stroke="black" stroke-width="1.66667"/>
+<circle cx="52.332" cy="63.6666" r="4.16667" stroke="black" stroke-width="1.66667"/>
+<path d="M57.3333 37.8334H55.6667C55.2064 37.8334 54.8333 37.4603 54.8333 37V27C54.8333 25.6193 55.9526 24.5 57.3333 24.5H67.3333C67.7936 24.5 68.1667 24.8731 68.1667 25.3334V27C68.1667 27.4603 67.7936 27.8334 67.3333 27.8334H60.6667C59.286 27.8334 58.1667 28.9526 58.1667 30.3334V37C58.1667 37.4603 57.7936 37.8334 57.3333 37.8334Z" fill="#0091F9" stroke="black" stroke-width="1.66667"/>
+<path d="M56.4987 43.6666C56.4987 47 53.1654 52.8333 44.832 53.6666" stroke="black" stroke-width="1.66667" stroke-linecap="round"/>
+<path d="M24.8346 20.3334L20.668 24.5" stroke="black" stroke-width="1.66667" stroke-linecap="round"/>
+<path d="M17.3346 28.6667L15.668 34.5" stroke="black" stroke-width="1.66667" stroke-linecap="round"/>
+<path d="M29.7516 17.5821L36.5857 15.5847" stroke="black" stroke-width="1.66667" stroke-linecap="round"/>
+<path d="M14 37.8334H13.1667V38.6667V43.6667C13.1667 51.4907 19.5093 57.8334 27.3333 57.8334H47.3333C55.1574 57.8334 61.5 51.4907 61.5 43.6667V38.6667V37.8334H60.6667H14Z" stroke="black" stroke-width="1.66667"/>
+<circle cx="39.832" cy="37.8334" r="1.66667" fill="white" stroke="black" stroke-width="1.66667"/>
+</svg>

@@ -1,0 +1,49 @@
+/* 도현체 */
+@font-face {
+  font-family: 'BMDOHYEON';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMDOHYEON.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+/* 메가타이틀 */
+.section-mega-title-box {
+  width: 100%;
+  height: 100px;
+  padding: 8px 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.section-mega-title-box h2{
+  font-family: "BMDOHYEON";
+  font-size: 48px;
+}
+.section-mega-title-box h2 span{
+  font-family: var(--main-font);
+  font-weight: var(--bold);
+}
+.section-mega-title-box p{
+  font-size: var(--body-lg-18);
+  font-weight: var(--medium);
+}
+.section-location-box{
+  display: flex;
+  gap: 24px;
+  justify-content: flex-end;
+  height: 48px;
+  align-items: center;
+}
+.section-location-box a{
+  position: relative;
+}
+.section-location-box a:after{
+  position: absolute;
+  content: url(../images/svg/l-chevron-right-01.svg);
+  top: 50%;
+  transform: translateY(-45%);
+  right: -38px;
+}
+.section-location-box a:last-of-type::after{
+  display: none;
+}

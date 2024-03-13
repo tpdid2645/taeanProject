@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+:root {
+  /* color */
+  /* neutral */
+  --neutral-900: #222222;
+  --neutral-800: #434343;
+  --neutral-700: #626262;
+  --neutral-600: #767676;
+  --neutral-500: #9f9f9f;
+  --neutral-400: #bebebe;
+  --neutral-300: #e1e1e1;
+  --neutral-200: #efefef;
+  --neutral-100: #f5f5f5;
+  --neutral-50: #fafafa;
+  --white: #fff;
+  /* primary */
+  --primary-900: #004eb4;
+  --primary-800: #016dd3;
+  --primary-700: #007ee5;
+  --primary-600: #0091f9;
+  --primary-500: #009fff;
+  --primary-400: #38adff;
+  --primary-300: #60bcff;
+  --primary-200: #90d0ff;
+  --primary-100: #bce1ff;
+  --primary-50: #e3f3ff;
+  /* secondary */
+  --secondary-900: #0c5d19;
+  --secondary-800: #237c2c;
+  --secondary-700: #2e8d36;
+  --secondary-600: #399f41;
+  --secondary-500: #42ae4a;
+  --secondary-400: #5fba65;
+  --secondary-300: #7cc680;
+  --secondary-200: #a2d5a4;
+  --secondary-100: #c6e6c7;
+  --secondary-50: #e7f5e8;
+  /* warning */
+  --warning: #cf2121;
+  /* font */
+  --main-font: "Pretendard", "sans-serif", "Arial";
+  --fa-font: FontAwesome;
+  --bs-font: bootstrap-icons;
+  /* font-size And font-weight */
+  /* font-size title */
+  --title-xl-32: 32px;
+  --title-lg-24: 24px;
+  --title-md-20: 20px;
+  --title-sm-18: 18px;
+  /* font-size body */
+  --body-xl-20: 20px;
+  --body-lg-18: 18px;
+  --body-md-16: 16px;
+  --body-sm-14: 14px;
+  --body-xs-12: 12px;
+  /* font-weight */
+  --bold: 700;
+  --semi-bold: 600;
+  --medium: 500;
+  --regular: 400;
+  /* line-height */
+  --title-xl-line: 36px;
+  --title-lg-line: 28px;
+  --title-md-line: 24px;
+  --title-sm-line: 22px;
+  
+  --body-xl-line: 24px;
+  --body-lg-line: 22px;
+  --body-md-line: 20px;
+  --body-sm-line: 18px;
+  --body-xs-line: 16px;
+}

@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>자유게시판</title>
+    <!-- favicon -->
+    <link rel="icon" href="./images/favicon/favicon.ico" />
+    <!-- policy -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+    <!-- css link -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/board.css" />
+    <link rel="stylesheet" href="./css/mega-title.css" />
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <!-- js link -->
+    <script src="./js/borad.js"></script>
+    <script src="./js/paging.js"></script>
+    <script src="./js/include.js"></script>
+    <script src="./js/common.js"></script>
+  </head>
+  <body>
+    <a class="top-btn" href="#">
+      <img src="./images/svg/top-btn-arrow.svg" alt="탑버튼" />
+    </a>
+    <div class="container">
+      <div class="header-include"></div>
+      <section class="board-section">
+        <div class="board-section-inner">
+          <div class="section-mega-title-box interview-mega-title-box">
+            <h2>태안 Talk</h2>
+            <p>
+              세상과 청년을 향한 모든 연결의 시작, 태안 청년들과 함께 시작하세요
+            </p>
+          </div>
+          <div class="section-location-box">
+            <a href="./index.html">홈</a>
+            <a href="./board.html">태안 Talk</a>
+          </div>
+          <div class="board-hot-top-box">
+            <ul class="board-hot-items">
+              <li class="board-hot-title">
+                <h3>현재 제일 핫한 글 놓치지 마세요! ❤️</h3>
+                <a href="#">
+                  <span>더보기</span>
+                  <img src="./images/svg/plus-01-md.svg" alt="더보기" />
+                </a>
+              </li>
+              <li class="board-hot-content">
+                <a href="#">
+                  <div class="board-hot-content-text-box">
+                    <h4>
+                      아파트 동네 상권이면서 동네분들 술먹고 외식하는
+                      상권이거든요.. 스포츠 게임기나 인형뽑기, 리듬게임 이런
+                      구성 어떨런지..... 리듬게임은 개인적으로 세가, 반다이남코
+                      이런걸 알아보고 있는데요, 넷과금이 얼마정도 하는지
+                      궁금한데 아시는 분 계신가요? 츄니즘 3대, 신태고 3대, 펌프
+                      1대 3~40평정도 생각합니다. 선배님들 팁 부탁드립니다.
+                    </h4>
+                    <div class="board-hot-content-info-box">
+                      <span>시공조아</span>
+                      <div class="board-table-view-box">
+                        <span>조회수 573</span>
+                        <span>댓글 13</span>
+                        <span>
+                          <em>♥︎</em>
+                          <em>0 </em>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="board-hot-content-img-box"></div>
+                </a>
+              </li>
+              <li class="board-hot-content">
+                <a href="#">
+                  <div class="board-hot-content-text-box">
+                    <h4>
+                      좋은 자료 찾아서 공유드립니다!!!! 다들 면접 화이팅!!!!! 약
+                      40년 공직경험과 인사위원장 등 경험을 바탕으로
+                      공직자(공무원, 공사, 공익재단 등) 면접요령을 첨부물(Part1
+                      - Part3)로 나누어 게시하오니 인사부서 및 수험생들께
+                      도움되시기 바랍니다. *유튜브(40년 공직 면접관)을 검색해
+                      보세요.
+                    </h4>
+                    <div class="board-hot-content-info-box">
+                      <span>민수아빠</span>
+                      <div class="board-table-view-box">
+                        <span>조회수 1,082</span>
+                        <span>댓글 32</span>
+                        <span>
+                          <em>♥︎</em>
+                          <em>11</em>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="board-hot-content-img-box">
+                    <img src="./images/hot-post-img.png" alt="게시판 이미지" />
+                  </div>
+                </a>
+              </li>
+              <li class="board-hot-content">
+                <a href="#">
+                  <div class="board-hot-content-text-box">
+                    <h4>
+                      오래 전부터 항상 생각을 해왔던 창업 아이디어가 있었고
+                      올해부터 본격적으로 시작을 하려고 했었는데 혼자서
+                      준비하려고 하니까 한계에 부딪히고 벽을 느끼게 되면서
+                      파트너에 대한 생각이 많이 들고 있습니다.
+                    </h4>
+                    <div class="board-hot-content-info-box">
+                      <span>창린이</span>
+                      <div class="board-table-view-box">
+                        <span>조회수 839</span>
+                        <span>댓글 26</span>
+                        <span>
+                          <em>♥︎</em>
+                          <em>1</em>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="board-hot-content-img-box"></div>
+                </a>
+              </li>
+            </ul>
+            <div class="board-hot-tag">
+              <a class="board-write-btn" href="#">
+                <span>글 쓰러가기</span>
+                <img src="./images/svg/pencil.svg" alt="펜슬" />
+              </a>
+              <aside class="hot-tag-sidebar">
+                <h4 class="hot-tag-sidebar-title">실시간 급상승 태그</h4>
+                <ul class="hot-tag-items">
+                  <li class="hot-tag-item">
+                    <div class="hot-tags">
+                      <img src="./images/svg/tag-shop.svg" alt="태그" />
+                      <span>취업준비</span>
+                    </div>
+                    <span class="follow-btn">팔로우하기</span>
+                  </li>
+                  <li class="hot-tag-item">
+                    <div class="hot-tags">
+                      <img src="./images/svg/tag-shop.svg" alt="태그" />
+                      <span>창업준비</span>
+                    </div>
+                    <span class="follow-btn active">팔로우</span>
+                  </li>
+                  <li class="hot-tag-item">
+                    <div class="hot-tags">
+                      <img src="./images/svg/tag-shop.svg" alt="태그" />
+                      <span>요식업</span>
+                    </div>
+                    <span class="follow-btn active">팔로우</span>
+                  </li>
+                  <li class="hot-tag-item">
+                    <div class="hot-tags">
+                      <img src="./images/svg/tag-shop.svg" alt="태그" />
+                      <span>이력서</span>
+                    </div>
+                    <span class="follow-btn">팔로우하기</span>
+                  </li>
+                  <li class="hot-tag-item">
+                    <div class="hot-tags">
+                      <img src="./images/svg/tag-shop.svg" alt="태그" />
+                      <span>면접준비</span>
+                    </div>
+                    <span class="follow-btn">팔로우하기</span>
+                  </li>
+                  <li class="hot-tag-item">
+                    <div class="hot-tags">
+                      <img src="./images/svg/tag-shop.svg" alt="태그" />
+                      <span>자기소개서</span>
+                    </div>
+                    <span class="follow-btn">팔로우하기</span>
+                  </li>
+                  <li class="hot-tag-item">
+                    <div class="hot-tags">
+                      <img src="./images/svg/tag-shop.svg" alt="태그" />
+                      <span>창업아이디어</span>
+                    </div>
+                    <span class="follow-btn">팔로우하기</span>
+                  </li>
+                  <li class="hot-tag-item">
+                    <div class="hot-tags">
+                      <img src="./images/svg/tag-shop.svg" alt="태그" />
+                      <span>사업아이템</span>
+                    </div>
+                    <span class="follow-btn">팔로우하기</span>
+                  </li>
+                  <li class="hot-tag-item">
+                    <div class="hot-tags">
+                      <img src="./images/svg/tag-shop.svg" alt="태그" />
+                      <span>독서모임</span>
+                    </div>
+                    <span class="follow-btn">팔로우하기</span>
+                  </li>
+                  <li class="hot-tag-item">
+                    <div class="hot-tags">
+                      <img src="./images/svg/tag-shop.svg" alt="태그" />
+                      <span>공무원</span>
+                    </div>
+                    <span class="follow-btn">팔로우하기</span>
+                  </li>
+                </ul>
+              </aside>
+            </div>
+          </div>
+          <!-- end : board-hot-top-box -->
+          <div class="board-hot-middle-box">
+            <div class="my-sub-tab-box">
+              <h2>내가 구독한 태그 ＃</h2>
+              <div class="my-sub-tab">
+                <span>#창업</span>
+                <span>#창업준비</span>
+                <span>#요식업</span>
+              </div>
+            </div>
+            <div class="board-hot-operate-box">
+              <h2>게시판 운영 안내</h2>
+              <div class="board-hot-operate">
+                <ul class="board-hot-operate-items">
+                  <li class="board-hot-operate-item must">
+                    <a href="#">
+                      <span>필독</span>
+                      <h4>토크 게시판 규칙, 규정 (24.02.26)</h4>
+                      <span class="hot-new">NEW</span>
+                    </a>
+                  </li>
+                  <li class="board-hot-operate-item notice">
+                    <a href="#">
+                      <span>공지</span>
+                      <h4>
+                        태안 청년 신문사 시스템 점검 중 토크 게시판 이용 중단
+                        안내
+                      </h4>
+                      <span class="hot-new">2024.02.14</span>
+                    </a>
+                  </li>
+                  <li class="board-hot-operate-item notice">
+                    <a href="#">
+                      <span>공지</span>
+                      <h4>불법 광고글 신고 방법 안내</h4>
+                      <span class="hot-new">2024.02.13</span>
+                    </a>
+                  </li>
+                  <li class="board-hot-operate-item notice">
+                    <a href="#">
+                      <span>필독</span>
+                      <h4>토그 게시판 규칙, 규정 (24.01.20)</h4>
+                      <span class="hot-new">2024.01.20</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- end : board-hot-middle-box -->
+          <div class="board-hot-end-box">
+            <div class="board-hot-end-title-box">
+              <h2>구독한 태그 모아보기 🤩</h2>
+              <a href="#"
+                ><span>더보기</span>
+                <img src="./images/svg/plus-01-md.svg" alt="더보기"
+              /></a>
+            </div>
+            <div class="hot-sub-box">
+              <a href="#" class="hot-sub-item">
+                <div class="hot-sub-item-user-info-tag-box">
+                  <div class="hot-sub-item-user-info-box">
+                    <div class="hot-sub-item-user-info">
+                      <img
+                        src="./images/svg/hot-user-icon.svg"
+                        alt="유저아이콘"
+                      />
+                      <span>시공조아</span>
+                    </div>
+                    <span class="hot-sub-item-date">2024.02.22</span>
+                  </div>
+                  <div class="hot-sub-tag-box">
+                    <span>#창업</span>
+                    <span class="unselect">#오락실</span>
+                    <span>#창업준비</span>
+                  </div>
+                </div>
+                <div class="hot-sub-item-content-box">
+                  <h3>오락실 창업 요즘 어떤가요?</h3>
+                  <p>
+                    아파트 동네 상권이면서 동네분들 술먹고 외식하는
+                    상권이거든요.. 스포츠 게임기나 인형뽑기, 리듬게임 이런 구성
+                    어떨런지..... 리듬게임은 개인적으로 세가, 반다이남코 이런걸
+                    알아보고 있는데요, 넷과금이 얼마정도 하는지 궁금한데 아시는
+                    분 계신가요? 츄니즘 3대, 신태고 3대, 펌프 1대 3~40평정도
+                    생각합니다. 선배님들 팁 부탁드립니다.
+                  </p>
+                  <div class="hot-sub-item-content-view-box">
+                    <span>조회수 573</span>
+                    <span>댓글 13</span>
+                    <span>
+                      <em>♥</em>
+                      <em>0</em>
+                    </span>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="hot-sub-item">
+                <div class="hot-sub-item-user-info-tag-box">
+                  <div class="hot-sub-item-user-info-box">
+                    <div class="hot-sub-item-user-info">
+                      <img src="./images/hot-user-pic.png" alt="유저아이콘" />
+                      <span>딸기조아</span>
+                    </div>
+                    <span class="hot-sub-item-date">2024.02.20</span>
+                  </div>
+                  <div class="hot-sub-tag-box">
+                    <span>#창업</span>
+                    <span>#요식업</span>
+                    <span>#창업준비</span>
+                    <span class="unselect">#탕후루</span>
+                  </div>
+                </div>
+                <div class="hot-sub-item-content-box">
+                  <h3>탕후루 창업 문의</h3>
+                  <p>
+                    탕후루 창업해보신 분 계신가요? 제가 지금 창업을 준비중인데,
+                    관련해서 도움받을 수 있는 선배님들 계신지 여쭤봅니다. 탕후루
+                    창업해보신 분 계신가요? 제가 지금 창업을 준비중인데,
+                    관련해서 도움받을 수 있는 선배님들 계신지 여쭤봅니다.
+                  </p>
+                  <div class="hot-sub-item-content-view-total-box">
+                    <div class="hot-sub-item-content-view-box">
+                      <span>조회수 117</span>
+                      <span>댓글 12</span>
+                      <span>
+                        <em>♥</em>
+                        <em>2</em>
+                      </span>
+                    </div>
+                    <img
+                      src="./images/svg/hot-is-img-label.svg"
+                      alt="이미지 표시"
+                    />
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="hot-sub-item">
+                <div class="hot-sub-item-user-info-tag-box">
+                  <div class="hot-sub-item-user-info-box">
+                    <div class="hot-sub-item-user-info">
+                      <img
+                        src="./images/svg/hot-user-icon.svg"
+                        alt="유저아이콘"
+                      />
+                      <span>창린이</span>
+                    </div>
+                    <span class="hot-sub-item-date">2024.02.18</span>
+                  </div>
+                  <div class="hot-sub-tag-box">
+                    <span>#창업</span>
+                    <span>#창업아이디어</span>
+                    <span class="unselect">#동업</span>
+                  </div>
+                </div>
+                <div class="hot-sub-item-content-box">
+                  <h3>
+                    안녕하세요. 창업 아이디어가 있는데 이에 대한 피드백을
+                    받아보고 싶습니다.
+                  </h3>
+                  <p>
+                    오래 전부터 항상 생각을 해왔던 창업 아이디어가 있었고
+                    올해부터 본격적으로 시작을 하려고 했었는데 혼자서 준비하려고
+                    하니까 한계에 부딪히고 벽을 느끼게 되면서 파트너에 대한
+                    생각이 많이 들고 있습니다. 제가 가지고 있는 아이디어를
+                    제시하고 이에 공감하거나 혹은 같이 하고 싶은 분들을 모시려고
+                    해도 접촉할 수 있는 공간이 마땅히 없는 것 같더라구요.
+                  </p>
+                  <div class="hot-sub-item-content-view-box">
+                    <span>조회수 839</span>
+                    <span>댓글 26</span>
+                    <span>
+                      <em>♥</em>
+                      <em>1</em>
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- end : board-hot-end-box -->
+          <div class="board-table-box">
+            <h2>전체 글 확인하기</h2>
+            <ul class="board-table">
+              <li class="board-table-content">
+                <a href="#">
+                  <div class="board-table-content-text">
+                    <div class="board-table-user-profile">
+                      <div class="board-table-user">
+                        <div class="board-table-user-img">
+                          <img
+                            src="./images/svg/hot-user-icon.svg"
+                            alt="유저프로필"
+                          />
+                        </div>
+                        <div class="board-table-user-info">
+                          <h4>커피호로록</h4>
+                          <span>10분 전</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="board-table-text-area">
+                      <h3>태안 중기직 잘 아시는 분!!!!</h3>
+                      <p>정보 좀 주세요~~~</p>
+                    </div>
+                    <div class="board-table-view-box">
+                      <span>조회수 11</span>
+                      <span>댓글 0</span>
+                      <span>
+                        <em>♥︎</em>
+                        <em>0</em>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="board-table-content-img"></div>
+                </a>
+              </li>
+              <li class="board-table-content">
+                <a href="#">
+                  <div class="board-table-content-text">
+                    <div class="board-table-user-profile">
+                      <div class="board-table-user">
+                        <div class="board-table-user-img">
+                          <img
+                            src="./images/svg/hot-user-icon.svg"
+                            alt="유저프로필"
+                          />
+                        </div>
+                        <div class="board-table-user-info">
+                          <h4>Judy쌤</h4>
+                          <span>5시간 전</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="board-table-text-area">
+                      <h3>현실적으로 가장 빠르게 영어 잘하는 방법 4가지</h3>
+                      <p>
+                        요즘은 영어 스피킹이 대세입니다. 각종 기업은 영어 말하기
+                        능력을 중요하게 여깁니다. 그런데 원어민처럼 발음을
+                        한다고 영어 실력이 좋아질까요? 쉐도잉만 열심히 하면
+                        영어가 정말 자연스럽게, 술술 나올까요? 그렇지 않습니다.
+                        영어 활용 능력은 현대인이라면 반드시 갖춰야 할
+                        역량입니다. 꿈을 이루고, 더 넓은 세상에서 살고싶다면
+                        영어 공부는 필수이죠.
+                      </p>
+                    </div>
+                    <div class="board-table-view-box">
+                      <span>조회수 24</span>
+                      <span>댓글 1</span>
+                      <span>
+                        <em>♥︎</em>
+                        <em>0</em>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="board-table-content-img">
+                    <img
+                      src="./images/hot-post-img-02.png"
+                      alt="게시글 이미지"
+                    />
+                  </div>
+                </a>
+              </li>
+              <li class="board-table-content">
+                <a href="#">
+                  <div class="board-table-content-text">
+                    <div class="board-table-user-profile">
+                      <div class="board-table-user">
+                        <div class="board-table-user-img">
+                          <img
+                            src="./images/hot-user-profile-02.png"
+                            alt="유저프로필"
+                          />
+                        </div>
+                        <div class="board-table-user-info">
+                          <h4>동네대장</h4>
+                          <span>23시간 전</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="board-table-text-area">
+                      <h3>나이 & 공백기 많은 친형 취업 조언 부탁드립니다.</h3>
+                      <p>
+                        저는 대학 졸업하자마자 바로 취업해서 취준 해본 경험도
+                        없고 어떻게 도움을 줘야할지 모르겠습니다. 늦은나이에
+                        취업에 성공하신 분이나 공백기 많을 때 취업에 성공하신
+                        분들이 도와주시면 감사하겠습니다. 형이 공백기가 너무
+                        길고 성격도 너무 여리고 내성적인데 어떤 직종으로 취업을
+                        해야할지 조언 부탁드립니다.
+                      </p>
+                    </div>
+                    <div class="board-table-view-box">
+                      <span>조회수 174</span>
+                      <span>댓글 23</span>
+                      <span>
+                        <em>♥︎</em>
+                        <em>3</em>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="board-table-content-img"></div>
+                </a>
+              </li>
+              <li class="board-table-content">
+                <a href="#">
+                  <div class="board-table-content-text">
+                    <div class="board-table-user-profile">
+                      <div class="board-table-user">
+                        <div class="board-table-user-img">
+                          <img
+                            src="./images/svg/hot-user-icon.svg"
+                            alt="유저프로필"
+                          />
+                        </div>
+                        <div class="board-table-user-info">
+                          <h4>시공조아</h4>
+                          <span>2024.02.22</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="board-table-text-area">
+                      <h3>오락실 창업 요즘 어떤가요?</h3>
+                      <p>
+                        아파트 동네 상권이면서 동네분들 술먹고 외식하는
+                        상권이거든요.. 스포츠 게임기나 인형뽑기, 리듬게임 이런
+                        구성 어떨런지..... 리듬게임은 개인적으로 세가,
+                        반다이남코 이런걸 알아보고 있는데요, 넷과금이 얼마정도
+                        하는지 궁금한데 아시는 분 계신가요? 츄니즘 3대, 신태고
+                        3대, 펌프 1대 3~40평정도 생각합니다. 선배님들 팁
+                        부탁드립니다.
+                      </p>
+                    </div>
+                    <div class="board-table-view-box">
+                      <span>조회수 573</span>
+                      <span>댓글 13</span>
+                      <span>
+                        <em>♥︎</em>
+                        <em>0</em>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="board-table-content-img"></div>
+                </a>
+              </li>
+              <li class="board-table-content">
+                <a href="#">
+                  <div class="board-table-content-text">
+                    <div class="board-table-user-profile">
+                      <div class="board-table-user">
+                        <div class="board-table-user-img">
+                          <img
+                            src="./images/hot-user-profile-03.png"
+                            alt="유저프로필"
+                          />
+                        </div>
+                        <div class="board-table-user-info">
+                          <h4>민수아빠</h4>
+                          <span>2024.02.22</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="board-table-text-area">
+                      <h3>
+                        면접관이 알려주는 공직자(공무원, 공사, 공익재단 등)
+                        면접요령
+                      </h3>
+                      <p>
+                        좋은 자료 찾아서 공유드립니다!!!! 다들 면접 화이팅!!!!!
+                        약 40년 공직경험과 인사위원장 등 경험을 바탕으로
+                        공직자(공무원, 공사, 공익재단 등) 면접요령을
+                        첨부물(Part1 - Part3)로 나누어 게시하오니 인사부서 및
+                        수험생들께 도움되시기 바랍니다. *유튜브(40년 공직
+                        면접관)을 검색해 보세요.
+                      </p>
+                    </div>
+                    <div class="board-table-view-box">
+                      <span>조회수 1,082</span>
+                      <span>댓글 32</span>
+                      <span>
+                        <em>♥︎</em>
+                        <em>11</em>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="board-table-content-img">
+                    <img
+                      src="./images/hot-post-img-01.png"
+                      alt="게시글 이미지"
+                    />
+                  </div>
+                </a>
+              </li>
+              <li class="board-table-content">
+                <a href="#">
+                  <div class="board-table-content-text">
+                    <div class="board-table-user-profile">
+                      <div class="board-table-user">
+                        <div class="board-table-user-img">
+                          <img
+                            src="./images/hot-user-pic.png"
+                            alt="유저프로필"
+                          />
+                        </div>
+                        <div class="board-table-user-info">
+                          <h4>딸기조아</h4>
+                          <span>2024.02.20</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="board-table-text-area">
+                      <h3>탕후루 창업문의</h3>
+                      <p>
+                        탕후루 창업해보신 분 계신가요? 제가 지금 창업을
+                        준비중인데, 관련해서 도움받을 수 있는 선배님들 계신지
+                        여쭤봅니다. 탕후루 창업해보신 분 계신가요? 제가 지금
+                        창업을 준비중인데, 관련해서 도움받을 수 있는 선배님들
+                        계신지 여쭤봅니다.
+                      </p>
+                    </div>
+                    <div class="board-table-view-box">
+                      <span>조회수 117</span>
+                      <span>댓글 12</span>
+                      <span>
+                        <em>♥︎</em>
+                        <em>2</em>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="board-table-content-img">
+                    <img
+                      src="./images/hot-post-img-03.png"
+                      alt="게시글 이미지"
+                    />
+                  </div>
+                </a>
+              </li>
+              <li class="board-table-content">
+                <a href="#">
+                  <div class="board-table-content-text">
+                    <div class="board-table-user-profile">
+                      <div class="board-table-user">
+                        <div class="board-table-user-img">
+                          <img
+                            src="./images/hot-user-profile-04.png"
+                            alt="유저프로필"
+                          />
+                        </div>
+                        <div class="board-table-user-info">
+                          <h4>태안충성충성</h4>
+                          <span>2024.02.19</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="board-table-text-area">
+                      <h3>알아두시면 유용한 사이트 알려드립니다.</h3>
+                      <p>
+                        일할때 보면 좋을 사이트 추천합니다~~~ 1. 뮤직톡
+                        http://www.musictalk.co.kr/ 상황, 기분, 쟝르 등으로
+                        분류되어 있어 원하는 음악 계속해서 들을 수 있어요. 가수
+                        나온 프로도 있어요. 2. 동영상닷컴
+                        http://dongyoungsang.com/index.php 드라마, 예능, 영화
+                        찾아 봅니다. 재생 안되는 경우도 있고 30~40분 재생되요.
+                        3. 보리보리(아이들 옷)
+                        http://www.boribori.co.kr/index.html 어른옷(하프클럽)
+                        베스트 100, 아이템, 가격순으로 보면 많아요. 지금
+                        노트주니어 티, 남방 5000 전후 살 수 있네요. 키 145cm는
+                        155사이즈 맞아요. - 빨리 크는 아기들 좋은 옷 입히고
+                        나중에 후회 많이 해요. 그 돈 아껴서 나중에 교육비로
+                        썼으면 좋았을 걸. 보리보리 가면 사이즈가 작은 것만 남은
+                        옷들 저가순으로 골라요. 4. 알라딘서점
+                        http://www.aladin.co.kr/home/welcome.aspx 서 오프라인
+                        알라딘 서점에서 판매도 해봤는데요. 물에 젖은 흔적 있어도
+                        안되고, 약간 찢어져도 안되고, 책안에 스탬프나 선물하면서
+                        쓴 글 써있어도 매입 안했어요. 구입하고 싶은 책 검색한 후
+                        회원 중고로 사면 알라딘 중고보다 몇천원 저렴해요. 구입할
+                        사이트 들어가서 저가순으로 괜찮은 책듥 구입해요.
+                        책상태는 최상급이나 상급으로 하면 상태 좋아요. 5.
+                        개똥이네 http://www.littlemom.co.kr/ 중고책 사이트.
+                        안전거래이고 종류 많아요. 6. 희망세상만들기
+                        http://cafe.daum.net/hopestory100 법륜스님 즉문연설,
+                        희망편지 등 7. 푸드뱅크 http://www.foodbank1377.org/
+                        안먹는 음식은 푸드뱅크에 전화하면 가지러 와요. 8.
+                        아름다운 가게 http://www.beautifulstore.org/ 안입는 옷,
+                        책 일정 박스 이상 되는 경우 아름다운 가게로 전화하면
+                        가지러 와요. 책은 가까운 도서관에 기증도 해요. 9. 엠팍
+                        불펜
+                        http://mlbpark.donga.com/mbs/articleL.php?mbsC=bullpen2,
+                        10. 오유 http://www.todayhumor.co.kr/ 심심할 때
+                      </p>
+                    </div>
+                    <div class="board-table-view-box">
+                      <span>조회수 64</span>
+                      <span>댓글 0</span>
+                      <span>
+                        <em>♥︎</em>
+                        <em>1</em>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="board-table-content-img">
+                    <img
+                      src="./images/hot-post-img-04.png"
+                      alt="게시글 이미지"
+                    />
+                  </div>
+                </a>
+              </li>
+              <li class="board-table-content">
+                <a href="#">
+                  <div class="board-table-content-text">
+                    <div class="board-table-user-profile">
+                      <div class="board-table-user">
+                        <div class="board-table-user-img">
+                          <img
+                            src="./images/hot-user-profile-05.png"
+                            alt="유저프로필"
+                          />
+                        </div>
+                        <div class="board-table-user-info">
+                          <h4>메밀꽃필무렵</h4>
+                          <span>2024.02.19</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="board-table-text-area">
+                      <h3>태안 군립도서관 독서모임 & 필사강의 초청 요청</h3>
+                      <p>
+                        안녕하세요. 군립도서관 근처 회사 다니고 있습니다.
+                        독서모임과 꾸려보고 글쓰기 연습을 지속적으로 하고싶은데
+                        이와관련하여 좋은 강의를 하시는 작가님이 계셔서 도서관
+                        초창강의 제안드려봅니다. 전국 도서관으로 독서모임
+                        이끄는법. 필사법.논제발제법.서평쓰는법 등 글쓰기와
+                        독서에 관한 강의도 많이 하시고 관련 책도 많이 저작하신
+                        김민영 작가님이십니다.
+                      </p>
+                    </div>
+                    <div class="board-table-view-box">
+                      <span>조회수 202</span>
+                      <span>댓글 7</span>
+                      <span>
+                        <em>♥︎</em>
+                        <em>0</em>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="board-table-content-img">
+                    <img
+                      src="./images/hot-post-img-05.png"
+                      alt="게시글 이미지"
+                    />
+                  </div>
+                </a>
+              </li>
+              <li class="board-table-content">
+                <a href="#">
+                  <div class="board-table-content-text">
+                    <div class="board-table-user-profile">
+                      <div class="board-table-user">
+                        <div class="board-table-user-img">
+                          <img
+                            src="./images/hot-user-profile-06.png"
+                            alt="유저프로필"
+                          />
+                        </div>
+                        <div class="board-table-user-info">
+                          <h4>드론장이</h4>
+                          <span>2024.02.18</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="board-table-text-area">
+                      <h3>
+                        인적 네트워크를 만들어가실 분을 모집 합니다 : &#41;
+                      </h3>
+                      <p>
+                        안녕하세요: &#41; 여러 사람들과 가치있는 시간을 공유해서
+                        같이 성장하는 시간을 가지고 싶어 아래와 같이 인적
+                        네트워크를 모집하게 되었습니다! 서로가 가진 지식과
+                        자원을 공유해 발전하는 계기가 되고 서로에게 긍정적인
+                        영향력을 행사할 수 있는 그룹으로 성장하기를 바라고
+                        있습니다^0^ 많이많이 지원해주세요~~~^^
+                      </p>
+                    </div>
+                    <div class="board-table-view-box">
+                      <span>조회수 534</span>
+                      <span>댓글 15</span>
+                      <span>
+                        <em>♥︎</em>
+                        <em>3</em>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="board-table-content-img">
+                    <img
+                      src="./images/hot-post-img-06.png"
+                      alt="게시글 이미지"
+                    />
+                  </div>
+                </a>
+              </li>
+              <li class="board-table-content">
+                <a href="#">
+                  <div class="board-table-content-text">
+                    <div class="board-table-user-profile">
+                      <div class="board-table-user">
+                        <div class="board-table-user-img">
+                          <img
+                            src="./images/svg/hot-user-icon.svg"
+                            alt="유저프로필"
+                          />
+                        </div>
+                        <div class="board-table-user-info">
+                          <h4>창린이</h4>
+                          <span>2024.02.18</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="board-table-text-area">
+                      <h3>
+                        안녕하세요. 창업 아이디어가 있는데 이에 대한 피드백을
+                        받아보고 싶습니다.
+                      </h3>
+                      <p>
+                        오래 전부터 항상 생각을 해왔던 창업 아이디어가 있었고
+                        올해부터 본격적으로 시작을 하려고 했었는데 혼자서
+                        준비하려고 하니까 한계에 부딪히고 벽을 느끼게 되면서
+                        파트너에 대한 생각이 많이 들고 있습니다. 제가 가지고
+                        있는 아이디어를 제시하고 이에 공감하거나 혹은 같이 하고
+                        싶은 분들을 모시려고 해도 접촉할 수 있는 공간이 마땅히
+                        없는 것 같더라구요.
+                      </p>
+                    </div>
+                    <div class="board-table-view-box">
+                      <span>조회수 839</span>
+                      <span>댓글 26</span>
+                      <span>
+                        <em>♥︎</em>
+                        <em>1</em>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="board-table-content-img"></div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- end : board-table-box -->
+        </div>
+        <div class="paging hot-board-paging">
+          <div class="paging-inner">
+            <ul class="paging-box">
+              <li class="paging-list prev-double-page">
+                <a href="#none"
+                  ><img
+                    src="./images/svg/chevron-left-double.svg"
+                    alt="맨처음으로"
+                /></a>
+              </li>
+              <li class="paging-list prev-page">
+                <a href="#none"
+                  ><img src="./images/svg/chevron-left-01.svg" alt="전단계"
+                /></a>
+              </li>
+              <li class="paging-list active number">
+                <a href="#none">1</a>
+              </li>
+              <li class="paging-list number">
+                <a href="#none">2</a>
+              </li>
+              <li class="paging-list number">
+                <a href="#none">3</a>
+              </li>
+              <li class="paging-list number">
+                <a href="#none">4</a>
+              </li>
+              <li class="paging-list number">
+                <a href="#none">5</a>
+              </li>
+              <li class="paging-list next-page">
+                <a href="#none"
+                  ><img
+                    src="./images/svg/chevron-right-01.svg"
+                    alt="다음페이지"
+                /></a>
+              </li>
+              <li class="paging-list next-double-page">
+                <a href="#none"
+                  ><img
+                    src="./images/svg/chevron-right-double.svg"
+                    alt="맨끝으로"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <div class="footer-include"></div>
+    </div>
+  </body>
+</html>

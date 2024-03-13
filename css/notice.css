@@ -1,0 +1,109 @@
+/* notice-section */
+.notice-btn-box {
+  display: flex;
+  gap: 8px;
+  border-bottom: 1px solid var(--neutral-200);
+  margin-bottom: 24px;
+}
+.notice-tab-btn {
+  width: 143px;
+  height: 42px;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+  color: var(--neutral-600);
+  background-color: var(--neutral-200);
+  font-size: var(--body-lg-18);
+  font-weight: var(--medium);
+}
+.notice-tab-btn.active {
+  background-color: var(--primary-700);
+  color: var(--white);
+}
+/* notice-all-pages */
+.notice-all-pages{
+  width: 100%;
+  position: relative;
+  min-height: 1960px;
+}
+.notice-all-pages > div{
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+}
+.page.active{
+  display: block;
+}
+/* page-list */
+.page-list-item a {
+  display: flex;
+  align-items: center;
+  padding: 24px 36px;
+  gap: 36px;
+  border-bottom: 1px solid var(--neutral-300);
+}
+.date-circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 140px;
+  background-color: var(--primary-50);
+  border-radius: 50%;
+}
+.date-circle span:first-of-type {
+  font-size: 50px;
+  font-weight: var(--bold);
+  color: var(--primary-700);
+}
+.date-circle span:last-of-type {
+  font-size: var(--body-xl-20);
+  font-weight: var(--bold);
+}
+.text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 860px;
+}
+.text-box h3 {
+  font-weight: var(--bold);
+  font-size: var(--title-md-20);
+}
+.text-box p {
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: keep-all;
+  font-weight: var(--medium);
+}
+.view-box{
+  display: flex;
+  gap: 8px;
+}
+.view-box span{
+  color: var(--neutral-700);
+  font-size: var(--body-sm-14);
+  position: relative;
+}
+.view-box span:after{
+  position: absolute;
+  content: "|";
+  top: 50%;
+  transform: translateY(-50%);
+  right: -6px;
+}
+.view-box span:last-of-type:after{
+  display: none;
+}
+/* release-page-list */
+.release-page-list .date-circle{
+  background-color: var(--secondary-50);
+}
+.release-page-list .date-circle span:first-of-type {
+color: var(--secondary-700);
+}
